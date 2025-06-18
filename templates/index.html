@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2 class="mb-4 text-center">Welcome To Student Feedback Portal</h2>
+
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card shadow-lg">
+            <!-- Image (served from static folder) -->
+            <img src="{{ url_for('static', filename='img/colleg.webp') }}" class="card-img-top" alt="College Image">
+            
+            <div class="card-body">
+                <h5 class="card-title">VASAVI INSTITUTE OF TECHNOLOGY</h5>
+                <p class="card-text">
+                    Welcome to our feedback portal. We value your opinions and strive for continuous improvement.
+                    Please take a moment to share your thoughts about our institution.
+                </p>
+
+                <!-- Key Features -->
+                <ul class="list-group list-group-flush mb-3">
+                    <li class="list-group-item">✅ Modern Labs & Infrastructure</li>
+                    <li class="list-group-item">✅ Experienced Faculty</li>
+                    <li class="list-group-item">✅ Industry-Ready Curriculum</li>
+                    <li class="list-group-item">✅ Placement Assistance</li>
+                    <li class="list-group-item">✅ Regular Workshops & Seminars</li>
+                </ul>
+
+                <!-- Buttons -->
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="/feedback" class="btn btn-primary me-md-2">Submit Feedback</a>
+                    <a href="/admin" class="btn btn-secondary">Admin Panel</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
